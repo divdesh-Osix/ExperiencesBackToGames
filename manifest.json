@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "ExperiencesBackToGamestesting",
+    "version": "1.1.2",
+    "icons": {
+        "16": "ExperiencesBackToGames.png",
+        "48": "ExperiencesBackToGames.png",
+        "128": "ExperiencesBackToGames.png"
+    },
+
+    "permissions": ["activeTab", "scripting"],
+
+    "action": {
+        "default_icon": {
+            "16": "ExperiencesBackToGames.png",
+            "48": "ExperiencesBackToGames.png",
+            "128":"ExperiencesBackToGames.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "TextReplacer"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.roblox.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
